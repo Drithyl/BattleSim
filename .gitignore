@@ -1,0 +1,8 @@
+*.ini
+*.bat
+*.dm
+*.tga
+/backups/*
+/games/*
+/bot.log.report
+/config.json
