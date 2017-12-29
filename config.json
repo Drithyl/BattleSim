@@ -1,0 +1,14 @@
+
+
+{
+  "token": "Mzk1NDE0MzY3OTI5MjM3NTA0.DSSh4A.QXyK2O6MBeHde4gU7vHB5Ss0qD8",
+  "dom5RootPath": "E:/Steam Library/steamapps/common/Dominions5/",
+  "dom5DataPath": "C:/Users/Jacob/AppData/Roaming/Dominions5/",
+  "pcUser": "Jacob",
+  "myGuildID": "253548414162173952",
+  "ownerID": "212328740233936896",
+  "botID": "255630545294196736",
+  "botRoleID": "253599062991831040",
+  "startMessage": "Welcome to the Battle Simulator! You can cancel it anytime by simply typing `%cancel` here. You can check the ID of units using Larz' Inspector (https://larzm42.github.io/dom5inspector/), just make sure to check the 'advanced' checkbox below the search bar.\n\n",
+  "modMessage": "Here is your mod! Ideally, you can use a map with forced starting provinces next to each other to make the testing as fast as possible. You can also use the debug mod (pinned in the #dom5_mods_and_maps channel) if you want to mess around with other things too."
+}

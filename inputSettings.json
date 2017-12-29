@@ -1,0 +1,16 @@
+
+{
+  "keys":
+  [
+    "commanders",
+    "units",
+    "newArmy"
+  ],
+
+  "cues":
+  {
+    "commanders": "**Commanders:** Select all the commanders you want by specifying first the ID and then the letter x followed by the amount. You can chain any number of them by adding commas, like for example: `5 x10, 54 x2, 87 x1` would spawn 10 Serpent Lords (id 5), 2 Castellans (id 54) and 1 Demonbred (id 87).",
+    "units": "**Units:** Select all the units you want by specifying first the ID and then the letter x followed by the amount. You can chain any number of them by adding commas, like for example: `1 x50, 18 x50` would spawn 50 Logrian Slingers (id 1) and 50 Militias (id 18). You can actually specify commanders here as well, and they will spawn as non-commanders ingame.",
+    "newArmy": "Do you want to create a new summonable army in the mod? Type 'yes' or 'no'."
+  }
+}
