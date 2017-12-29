@@ -1,10 +1,10 @@
 
 
 {
-  "token": "Mzk1NDE0MzY3OTI5MjM3NTA0.DSSh4A.QXyK2O6MBeHde4gU7vHB5Ss0qD8",
-  "dom5RootPath": "E:/Steam Library/steamapps/common/Dominions5/",
-  "dom5DataPath": "C:/Users/Jacob/AppData/Roaming/Dominions5/",
-  "pcUser": "Jacob",
+  "token": "Discord token here",
+  "dom5RootPath": "Dom5 root path here",
+  "dom5DataPath": "Dom5 data path here",
+  "pcUser": "PC Username here",
   "myGuildID": "253548414162173952",
   "ownerID": "212328740233936896",
   "botID": "255630545294196736",
