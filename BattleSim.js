@@ -175,7 +175,15 @@ function parseCommanders(data)
 	for (var i = 0; i < inputs.length; i++)
 	{
 		var id = inputs[i].replace(/x\d+/ig, "").trim().toLowerCase();
-		var nbr = +inputs[i].match(/x\d+/ig)[0].replace(/x/g, "");
+		var nbr = +inputs[i].match(/x\d+/ig);
+
+		if (!nbr.length)
+		{
+			rw.log("No number was matched.");
+			return null;
+		}
+
+		nbr = nbr[0].replace(/x/g, "");
 
 		if (/\d/.test(id) === false)
 		{
@@ -212,7 +220,15 @@ function parseUnits(data)
 	for (var i = 0; i < inputs.length; i++)
 	{
 		var id = inputs[i].replace(/x\d+/ig, "").trim().toLowerCase();
-		var nbr = +inputs[i].match(/x\d+/ig)[0].replace(/x/g, "");
+		var nbr = +inputs[i].match(/x\d+/ig);
+
+		if (!nbr.length)
+		{
+			rw.log("No number was matched.");
+			return null;
+		}
+
+		nbr = nbr[0].replace(/x/g, "");
 
 		if (/\d/.test(id) === false)
 		{
