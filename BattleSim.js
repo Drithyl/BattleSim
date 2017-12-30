@@ -181,9 +181,8 @@ function parseCommanders(data)
 	{
 		var id = inputs[i].replace(/x\d+/ig, "").trim().toLowerCase();
 		var nbr = inputs[i].match(/x\d+/ig);
-		console.log(nbr);
 
-		if (!nbr.length)
+		if (nbr == null || !nbr.length)
 		{
 			rw.log("No number was matched.");
 			return null;
@@ -226,7 +225,7 @@ function parseUnits(data)
 		var id = inputs[i].replace(/x\d+/ig, "").trim().toLowerCase();
 		var nbr = inputs[i].match(/x\d+/ig);
 
-		if (!nbr.length)
+		if (nbr == null || !nbr.length)
 		{
 			rw.log("No number was matched.");
 			return null;
