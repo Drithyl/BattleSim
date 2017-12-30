@@ -73,6 +73,11 @@ bot.on('message', message =>
 		rw.log("Could not find the GuildMember object of user " + username + ". His input was '" + input + "' in channel " + message.channel.name + ".");
 	}
 
+	if (message.channel.type != "dm")
+	{
+		return;
+	}
+
 	if (/^\%SIM$/i.test(input))
 	{
 		if (member == null)
@@ -175,7 +180,8 @@ function parseCommanders(data)
 	for (var i = 0; i < inputs.length; i++)
 	{
 		var id = inputs[i].replace(/x\d+/ig, "").trim().toLowerCase();
-		var nbr = +inputs[i].match(/x\d+/ig);
+		var nbr = inputs[i].match(/x\d+/ig);
+		console.log(nbr);
 
 		if (!nbr.length)
 		{
@@ -196,15 +202,13 @@ function parseCommanders(data)
 			return null;
 		}
 
-		if (isNaN(+id) === true || isNaN(nbr) === true)
+		if (isNaN(nbr) === true)
 		{
 			return null;
 		}
 
 		for (var j = 0; j < nbr; j++)
 		{
-
-
 			commanders.push({"id": id, "amount": 1});
 		}
 	}
@@ -220,7 +224,7 @@ function parseUnits(data)
 	for (var i = 0; i < inputs.length; i++)
 	{
 		var id = inputs[i].replace(/x\d+/ig, "").trim().toLowerCase();
-		var nbr = +inputs[i].match(/x\d+/ig);
+		var nbr = inputs[i].match(/x\d+/ig);
 
 		if (!nbr.length)
 		{
@@ -241,7 +245,7 @@ function parseUnits(data)
 			return null;
 		}
 
-		if (isNaN(+id) === true || isNaN(nbr) === true)
+		if (isNaN(nbr) === true)
 		{
 			return null;
 		}
