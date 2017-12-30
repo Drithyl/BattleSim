@@ -1,0 +1,12 @@
+
+{
+  "name": "BattleSim",
+  "description": "This mod is intended to quickly see the results of custom battles using the troops selected through the BattleSim bot of the Clockwork Hounds' Discord group.",
+  "spellDescription": "This spell creates one of the armies chosen by the user.",
+  "version": "1.0",
+  "domversion": "5.09",
+  "iconPath": "banner.tga",
+  "1stSpellName": "First Army",
+  "2ndSpellName": "Second Army",
+  "mainSpellPath": 4
+}
