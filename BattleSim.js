@@ -52,7 +52,6 @@ bot.on("ready", () =>
 	if (wasInitialized == false)
 	{
 		initialize();
-		console.log(unitList);
 	}
 });
 
