@@ -463,13 +463,13 @@ bot.on("warn", warning =>
 	rw.log("WARN: " + warning);
 });
 
-bot.on("error", () =>
+bot.on("error", (err) =>
 {
-	rw.log("An error occurred. This is from the 'on.error' event.");
+	rw.log(`An error occurred:\n\n${err}`);
 
-	if (owner)
+	if (masterOwner)
 	{
-		owner.send("Something went wrong! I am dying D':");
+		masterOwner.send(`An error occurred:\n\n${err}`).catch((error) => {rw.log(error);});
 	}
 });
 
