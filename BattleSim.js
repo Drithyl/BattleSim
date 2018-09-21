@@ -467,7 +467,7 @@ bot.on("error", (err) =>
 {
 	rw.log(`An error occurred:\n\n${err}`);
 
-	if (masterOwner)
+	if (owner)
 	{
 		owner.send(`An error occurred:\n\n${err}`).catch((error) => {rw.log(error);});
 	}
